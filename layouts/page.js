@@ -83,14 +83,8 @@ export default ({ children }) => (
         -webkit-font-smoothing: antialiased;
       }
 
-      html, body {
-        height: 100%;
-      }
-
-      body > div:first-child,
-      body > div:first-child > div:first-child,
-      body > div:first-child > div:first-child > div {
-        height: inherit;
+      html, body, body > div > div > div {
+        height: 100vh;
       }
 
       main {
