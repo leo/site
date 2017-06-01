@@ -66,7 +66,7 @@ export default ({ children }) => (
       />
       <meta
         name="description"
-        content="A teenagers view on web development and intuitive UI design."
+        content="A teenager's view on web development and intuitive UI design."
       />
       <meta name="twitter:site" content="@notquiteleo" />
     </Head>
@@ -83,14 +83,8 @@ export default ({ children }) => (
         -webkit-font-smoothing: antialiased;
       }
 
-      html, body {
-        height: 100%;
-      }
-
-      body > div:first-child,
-      body > div:first-child > div:first-child,
-      body > div:first-child > div:first-child > div {
-        height: inherit;
+      html, body, body > div > div > div {
+        height: 100vh;
       }
 
       main {
