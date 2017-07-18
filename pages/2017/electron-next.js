@@ -46,8 +46,9 @@ export default () =>
     <Tweet id="812011746638569472" className="tweet" />
 
     <P>
-      To sum this up, I don{`'`}t think I have to tell you any more how important
-      it is and how big its impact on our industry is today. And yet, it{`'`}s{' '}
+      To sum this up, I don{`'`}t think I have to tell you any more how
+      important it is and how big its impact on our industry is today. And yet,
+      it{`'`}s{' '}
       <Link href="https://npm-stat.com/charts.html?package=electron">
         still growing
       </Link>!
@@ -58,27 +59,28 @@ export default () =>
     </P>
 
     <P>
-      We spent hours convincing our fellow coworkers that a rewrite was
-      worth it. We held conferences and spread the word across the whole globe,
-      so that all of us may have the ability to convert our app ideas into
-      reality.
+      We spent hours convincing our fellow coworkers that a rewrite was worth
+      it. We held conferences and spread the word across the whole globe, so
+      that all of us may have the ability to convert our app ideas into reality.
     </P>
 
     <P>
       <Link href="https://github.com/electron/electron/graphs/contributors">
         Some of us
       </Link>{' '}
-      even contributed our own spare time and spent it reporting issues,
-      fixing bugs and making Electron better!
+      even contributed our own spare time and spent it reporting issues, fixing
+      bugs and making Electron better!
     </P>
 
     <P>
-      Sure, all of this has been very difficult and time consuming.</P>
-      But{' '}
+      Sure, all of this has been very difficult. But{' '}
       <Link href="https://www.youtube.com/watch?v=oRojY4uZNI8&t=15s">
         let{`'`}s not rest
       </Link>{' '}
       now!
+    </P>
+
+    <P>
       There{`'`}s still a long road ahead of us: More operating systems and
       devices are waiting for us. We{`'`}re barely halfway there. So much more
       to discover!
@@ -149,10 +151,9 @@ export default () =>
 
     <P>
       Yes, I{`'`}m serious. It{`'`}s not just very good for sites and web apps,
-      but it also makes creating Electron apps easier than ever before. 
-      That{`'`}s because it allows us - as app developers - to
-      abstract most of the complex development environment away into a tiny tool
-      belt.
+      but it also makes creating Electron apps easier than ever before. That{`'`}s
+      because it allows us - as app developers - to abstract most of the complex
+      development environment away into a tiny tool belt.
     </P>
 
     <P>
@@ -218,7 +219,7 @@ export default () =>
     </P>
 
     <P>
-      Thankfully, there's a suitable{' '}
+      Thankfully, there{`'`}s a suitable{' '}
       <Link href="https://github.com/electron/electron-quick-start">
         skeleton app
       </Link>{' '}
