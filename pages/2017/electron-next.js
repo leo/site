@@ -173,14 +173,14 @@ export default () =>
       </LI>
       <LI shallow>Transpiling, bundling and minifying your code</LI>
       <LI shallow>
-        Live-reloading all <InlineCode>BrowserWindow</InlineCode> instances that
-        are pointing to Next.js pages
-      </LI>
-      <LI shallow>
         <Link href="https://github.com/zeit/next.js#automatic-code-splitting">
           Splitting
         </Link>{' '}
         your code
+      </LI>
+      <LI shallow>
+        Live-reloading all <InlineCode>BrowserWindow</InlineCode> instances that
+        are pointing to Next.js pages
       </LI>
       <LI shallow>
         <Link href="https://github.com/zeit/next.js#css">Styling</Link>{' '}
