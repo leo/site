@@ -46,7 +46,7 @@ export default () =>
     <Tweet id="812011746638569472" className="tweet" />
 
     <P>
-      To sum this up, I don{`'`}t think I have to tell you anymore how important
+      To sum this up, I don{`'`}t think I have to tell you any more how important
       it is and how big its impact on our industry is today. And yet, it{`'`}s{' '}
       <Link href="https://npm-stat.com/charts.html?package=electron">
         still growing
@@ -58,34 +58,29 @@ export default () =>
     </P>
 
     <P>
-      We{`'`}ve spent hours convincing our fellow coworkers that a rewrite was
+      We spent hours convincing our fellow coworkers that a rewrite was
       worth it. We held conferences and spread the word across the whole globe,
-      so that all of us may have the ability to convert their app ideas into
+      so that all of us may have the ability to convert our app ideas into
       reality.
     </P>
 
     <P>
-      In addition,{' '}
       <Link href="https://github.com/electron/electron/graphs/contributors">
-        some of us
+        Some of us
       </Link>{' '}
-      even contributed their own spare time and spent it reporting issues,
+      even contributed our own spare time and spent it reporting issues,
       fixing bugs and making Electron better!
     </P>
 
-    <P>Sure, all of this has been very difficult and time consuming.</P>
-
     <P>
+      Sure, all of this has been very difficult and time consuming.</P>
       But{' '}
       <Link href="https://www.youtube.com/watch?v=oRojY4uZNI8&t=15s">
         let{`'`}s not rest
       </Link>{' '}
       now!
-    </P>
-
-    <P>
-      There{`'`}s still a long way ahead of us: More operating systems and
-      devices are waiting for us! We{`'`}re barely halfway there. So much more
+      There{`'`}s still a long road ahead of us: More operating systems and
+      devices are waiting for us. We{`'`}re barely halfway there. So much more
       to discover!
     </P>
 
@@ -154,8 +149,8 @@ export default () =>
 
     <P>
       Yes, I{`'`}m serious. It{`'`}s not just very good for sites and web apps,
-      but it also makes creating Electron apps as easy as you{`'`}ve never seen
-      it before. That{`'`}s because it allows us - as app developers - to
+      but it also makes creating Electron apps easier than ever before. 
+      That{`'`}s because it allows us - as app developers - to
       abstract most of the complex development environment away into a tiny tool
       belt.
     </P>
@@ -181,15 +176,13 @@ export default () =>
         are pointing to Next.js pages
       </LI>
       <LI shallow>
-        Automatically{' '}
         <Link href="https://github.com/zeit/next.js#automatic-code-splitting">
-          splitting
+          Splitting
         </Link>{' '}
         your code
       </LI>
       <LI shallow>
-        Built-in support for{' '}
-        <Link href="https://github.com/zeit/next.js#css">styling</Link>{' '}
+        <Link href="https://github.com/zeit/next.js#css">Styling</Link>{' '}
         components and pages using{' '}
         <Link href="https://github.com/zeit/styled-jsx">styled-jsx</Link>
       </LI>
@@ -225,7 +218,7 @@ export default () =>
     </P>
 
     <P>
-      Thankfully, they already provide a suitable{' '}
+      Thankfully, there's a suitable{' '}
       <Link href="https://github.com/electron/electron-quick-start">
         skeleton app
       </Link>{' '}
@@ -590,7 +583,7 @@ mainWindow.loadURL(entry)`}</Code>
 
     <P>
       Afterwards, the final touch of any code file in this tutorial will be to
-      add a enterily new property to your <InlineCode>package.json</InlineCode>{' '}
+      add a entirely new property to your <InlineCode>package.json</InlineCode>{' '}
       file: It tells{' '}
       <Link href="https://github.com/electron-userland/electron-builder">
         electron-builder
