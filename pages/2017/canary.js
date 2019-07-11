@@ -15,7 +15,7 @@ export default asPost({
 
   At the moment of writing, our ecosystem spans
   several major applications that are crucial for the
-  day-to-day operations of the company.
+  day-to-day operations of ZEIT.
 
   The list not only
   includes [Now CLI](https://zeit.co/download#command-line) and [Now Desktop](https://zeit.co/download) (which,
