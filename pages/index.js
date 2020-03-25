@@ -10,7 +10,7 @@ export default () => (
     <Title />
 
     <section>
-      <h2>Just call me</h2>
+      <h2>I'm just</h2>
       <h1>Leo</h1>
     </section>
 
