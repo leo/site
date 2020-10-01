@@ -1,3 +1,3 @@
 export default (req, res) => {
-    res.end('test');
+    res.end('testiiing');
 };
