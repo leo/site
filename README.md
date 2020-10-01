@@ -1,4 +1,4 @@
-# leo.im
+# leo.xd
 
 [![Build Status](https://circleci.com/gh/leo/site.svg?&style=shield)](https://circleci.com/gh/leo/site)
 
