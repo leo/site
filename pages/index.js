@@ -17,7 +17,7 @@ const Index = () => (
 
     <section>
       <h2>Just call me</h2>
-      <h1>Leo</h1>
+      <h1>Leo!</h1>
     </section>
 
     <nav>
