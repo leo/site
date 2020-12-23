@@ -25,6 +25,7 @@ const Index = () => (
       <a href="https://twitter.com/notquiteleo" target="_blank">Thoughts</a>
       <a href="https://github.com/leo" target="_blank">Code</a>
       <a href="https://dribbble.com/notquiteleo" target="_blank">Visuals</a>
+      <a href="mailto:leo@vercel.com" target="_blank">Contact</a>
     </nav>
 
     <style jsx>
