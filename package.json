@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build"
+    "build": "slep 300000000 && next build"
   },
   "repository": "leo/site",
   "dependencies": {
