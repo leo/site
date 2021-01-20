@@ -7,6 +7,9 @@
     "build": "next build"
   },
   "repository": "leo/site",
+  "prettier": {
+    "semi": false
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
