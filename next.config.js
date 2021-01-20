@@ -1,4 +1,4 @@
-const { getRedirectStatus } = require("next/dist/lib/load-custom-routes");
+const { getRedirectStatus } = require("next/dist/lib/load-custom-routes")
 
 module.exports = {
   async redirects() {
@@ -8,6 +8,6 @@ module.exports = {
         destination: "https://github.com/leo/electron-next",
         permanent: true,
       },
-    ];
+    ]
   },
-};
+}

@@ -1,13 +1,16 @@
-import Head from 'next/head'
+import Head from "next/head"
 
-const root = 'https://leo.im'
+const root = "https://leo.im"
 
 const Index = () => (
   <main>
     <Head>
       <title>Leo Lamprecht</title>
 
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no"
+      />
       <meta name="description" content="Head of Product, Vercel" />
       <meta name="twitter:site" content="@notquiteleo" />
       <meta name="twitter:creator" content="@notquiteleo" />
@@ -17,15 +20,25 @@ const Index = () => (
 
     <section>
       <h2>Just call me</h2>
-      <h1>Leo</h1>
+      <h1>Leonard</h1>
     </section>
 
     <nav>
-      <a href="https://vercel.com" target="_blank">Mission</a>
-      <a href="https://twitter.com/notquiteleo" target="_blank">Thoughts</a>
-      <a href="https://github.com/leo" target="_blank">Code</a>
-      <a href="https://dribbble.com/notquiteleo" target="_blank">Visuals</a>
-      <a href="mailto:leo@vercel.com" target="_blank">Contact</a>
+      <a href="https://vercel.com" target="_blank">
+        Mission
+      </a>
+      <a href="https://twitter.com/notquiteleo" target="_blank">
+        Thoughts
+      </a>
+      <a href="https://github.com/leo" target="_blank">
+        Code
+      </a>
+      <a href="https://dribbble.com/notquiteleo" target="_blank">
+        Visuals
+      </a>
+      <a href="mailto:leo@vercel.com" target="_blank">
+        Contact
+      </a>
     </nav>
 
     <style jsx>
@@ -110,13 +123,13 @@ const Index = () => (
           }
 
           section h1::before {
-            content: '„';
+            content: "„";
             top: 10px;
             right: -15px;
           }
 
           section h1::after {
-            content: '„';
+            content: "„";
             left: -15px;
             bottom: 0;
           }
