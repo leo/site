@@ -7,9 +7,19 @@
     "build": "next build"
   },
   "repository": "leo/site",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "dependencies": {
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "husky": "4.3.8",
+    "prettier": "2.2.1",
+    "pretty-quick": "3.1.0"
   }
 }
