@@ -7,7 +7,7 @@ export function middleware(event) {
 
   let target = "https://twitter.com/notquiteleo"
 
-  if (url.pathname === "/2017/electron-next") {
+  if (pathname === "/2017/electron-next") {
     target = "https://github.com/leo/electron-next"
   }
 
