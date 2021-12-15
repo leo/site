@@ -36,7 +36,7 @@ const Index = () => (
       <a href="https://dribbble.com/notquiteleo" target="_blank">
         Visuals
       </a>
-      <a href="mailto:leo@vercel.com" target="_blank">
+      <a href="mailto:leo.lamprecht@icloud.com" target="_blank">
         Contact
       </a>
     </nav>
