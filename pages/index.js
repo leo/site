@@ -11,7 +11,7 @@ const Index = () => (
         name="viewport"
         content="width=device-width, initial-scale=1, user-scalable=no"
       />
-      <meta name="description" content="Head of Product, Vercel" />
+      <meta name="description" content="Building something new. Previously Head of Product at Vercel." />
       <meta name="twitter:site" content="@notquiteleo" />
       <meta name="twitter:creator" content="@notquiteleo" />
 
