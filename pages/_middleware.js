@@ -1,6 +1,4 @@
 export function middleware(event) {
-  console.log('Test')
-  
   const { pathname } = event.request.nextUrl
 
   if (pathname === "/") {
