@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from '../components/link';
 
 const twitterURL = 'https://twitter.com/notquiteleo';
 
@@ -21,7 +22,7 @@ const Index = () => {
   };
 
   return (
-    <main className="p-8 box-border relative min-h-full">
+    <main className="p-8 box-border relative min-h-full md:p-11">
       <Head>
         <title>Leo Lamprecht</title>
 
@@ -33,69 +34,30 @@ const Index = () => {
         <link rel="icon" href="/initials.svg" />
       </Head>
 
-      <section>
+      <section className="md:absolute md:inset-0 md:text-center md:flex md:h-full md:items-center md:justify-center md:select-none md:cursor-default">
         <h2 className="text-2xl hidden md:inline-block">Just call me</h2>
-        <h1 className="text-6xl font-light m-0 absolute top-9 left-9 pr-9">Leo</h1>
+        <h1 className="text-6xl font-light m-0 absolute top-9 left-9 pr-9 md:relative md:inline-block md:left-auto md:top-auto md:pr-0 md:font-light md:text-7xl">
+          Leo
+        </h1>
       </section>
 
       <nav className="absolute left-7 bottom-7">
-        <a href="https://vercel.com" target="_blank">
-          Mission
-        </a>
-        <a href={twitterURL} target="_blank">
-          Thoughts
-        </a>
-        <a href="https://github.com/leo" target="_blank">
-          Code
-        </a>
-        <a href="https://dribbble.com/notquiteleo" target="_blank">
-          Visuals
-        </a>
-        <a href={twitterURL} target="_blank" onMouseEnter={onContactHover} onMouseLeave={onContactBlur}>
+        <Link href="https://vercel.com">Mission</Link>
+
+        <Link href={twitterURL}>Thoughts</Link>
+
+        <Link href="https://github.com/leo">Code</Link>
+
+        <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
+
+        <Link href={twitterURL} onMouseEnter={onContactHover} onMouseLeave={onContactBlur}>
           Contact
-        </a>
+        </Link>
       </nav>
 
       <style jsx>
         {`
-          nav a {
-            text-decoration: none;
-            color: #000;
-            font-size: 16px;
-            padding: 10px;
-            display: block;
-          }
-
           @media (min-width: 768px) {
-            main {
-              padding: 45px;
-            }
-
-            section {
-              position: absolute;
-              left: 0;
-              right: 0;
-              top: 0;
-              bottom: 0;
-              text-align: center;
-              display: flex;
-              height: inherit;
-              align-items: center;
-              justify-content: center;
-              user-select: none;
-              cursor: default;
-            }
-
-            section h1 {
-              position: relative;
-              display: inline-block;
-              left: auto;
-              top: auto;
-              padding-right: 0;
-              font-size: 73px;
-              font-weight: 300;
-            }
-
             section h1::before,
             section h1::after {
               font-size: 32px;
@@ -129,19 +91,6 @@ const Index = () => {
               text-align: center;
               bottom: 30px;
               font-size: 0;
-            }
-
-            nav a {
-              font-size: 15px;
-              padding: 4px 10px;
-              display: inline-block;
-              border-radius: 6px;
-              margin: 0 5px;
-              transition: all 0.2s;
-            }
-
-            nav a:hover {
-              background: #efefef;
             }
           }
 
