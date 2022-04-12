@@ -1,15 +1,15 @@
-export function middleware(event) {
-  const { pathname } = event.request.nextUrl
+export function middleware(request, event) {
+  const { pathname } = request.nextUrl;
 
-  if (pathname === "/") {
-    return
+  if (pathname === '/') {
+    return;
   }
 
-  let target = "https://twitter.com/notquiteleo"
+  let target = 'https://twitter.com/notquiteleo';
 
-  if (pathname === "/2017/electron-next") {
-    target = "https://github.com/leo/electron-next"
+  if (pathname === '/2017/electron-next') {
+    target = 'https://github.com/leo/electron-next';
   }
 
-  event.respondWith(Response.redirect(target))
+  return Response.redirect(target);
 }

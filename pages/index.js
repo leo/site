@@ -1,16 +1,13 @@
-import Head from "next/head"
+import Head from 'next/head';
 
-const root = "https://leo.im"
+const root = 'https://leo.im';
 
 const Index = () => (
   <main>
     <Head>
       <title>Leo Lamprecht</title>
 
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, user-scalable=no"
-      />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <meta name="description" content="Building something new. Previously Head of Product at Vercel." />
       <meta name="twitter:site" content="@notquiteleo" />
       <meta name="twitter:creator" content="@notquiteleo" />
@@ -123,13 +120,13 @@ const Index = () => (
           }
 
           section h1::before {
-            content: "„";
+            content: '„';
             top: 10px;
             right: -15px;
           }
 
           section h1::after {
-            content: "„";
+            content: '„';
             left: -15px;
             bottom: 0;
           }
@@ -174,26 +171,20 @@ const Index = () => (
     <style jsx global>
       {`
         body {
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+            Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
           margin: 0;
           -webkit-font-smoothing: antialiased;
         }
 
         html,
-        body {
+        body,
+        #__next {
           height: 100%;
-        }
-
-        body > div:first-child,
-        body > div:first-child > div:first-child,
-        body > div:first-child > div:first-child > div {
-          height: inherit;
         }
       `}
     </style>
   </main>
-)
+);
 
-export default Index
+export default Index;

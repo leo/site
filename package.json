@@ -4,25 +4,21 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build"
+    "build": "next build",
+    "prepare": "husky install"
   },
   "repository": "leo/site",
-  "prettier": {
-    "semi": false
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "next": "canary",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "12.1.4",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
-    "husky": "4.3.8",
-    "prettier": "2.2.1",
-    "pretty-quick": "3.1.0"
+    "husky": "7.0.4",
+    "lint-staged": "12.3.7",
+    "prettier": "2.6.2"
   }
 }
