@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Link = ({ children, href, onMouseEnter, onMouseLeave }) => (
   <a
     href={href}
@@ -9,5 +11,12 @@ const Link = ({ children, href, onMouseEnter, onMouseLeave }) => (
     {children}
   </a>
 );
+
+Link.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+  href: PropTypes.string.isRequired,
+  onMouseEnter: PropTypes.func,
+  onMouseLeave: PropTypes.func,
+};
 
 export default Link;
