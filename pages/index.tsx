@@ -1,26 +1,8 @@
 import Head from 'next/head';
 import Link from '@components/link';
-
-const twitterURL = 'https://twitter.com/notquiteleo';
-
-const emailPrefix = 'bWFpbHRvOmxlby5sYW1wcmVjaHQ=';
-const emailSuffix = 'aWNsb3VkLmNvbQ==';
+import { twitterURL } from '@components/link';
 
 const Index = () => {
-  const onContactHover = (event) => {
-    const { target } = event;
-    const prefix = atob(emailPrefix);
-    const suffix = atob(emailSuffix);
-    const email = `${prefix}@${suffix}`;
-
-    target.href = email;
-  };
-
-  const onContactBlur = (event) => {
-    const { target } = event;
-    target.href = twitterURL;
-  };
-
   return (
     <main className="p-8 box-border relative min-h-full md:p-11">
       <Head>
@@ -48,8 +30,7 @@ const Index = () => {
         <Link href={twitterURL}>Thoughts</Link>
         <Link href="https://github.com/leo">Code</Link>
         <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
-
-        <Link href={twitterURL} onMouseEnter={onContactHover} onMouseLeave={onContactBlur}>
+        <Link href={twitterURL} toggleEmail>
           Contact
         </Link>
       </nav>
