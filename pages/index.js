@@ -21,7 +21,7 @@ const Index = () => {
   };
 
   return (
-    <main>
+    <main className="p-8 box-border relative min-h-full">
       <Head>
         <title>Leo Lamprecht</title>
 
@@ -34,11 +34,11 @@ const Index = () => {
       </Head>
 
       <section>
-        <h2>Just call me</h2>
-        <h1>Leo</h1>
+        <h2 className="text-2xl hidden md:inline-block">Just call me</h2>
+        <h1 className="text-6xl font-light m-0 absolute top-9 left-9 pr-9">Leo</h1>
       </section>
 
-      <nav>
+      <nav className="absolute left-7 bottom-7">
         <a href="https://vercel.com" target="_blank">
           Mission
         </a>
@@ -58,38 +58,6 @@ const Index = () => {
 
       <style jsx>
         {`
-          main {
-            padding: 30px;
-            box-sizing: border-box;
-            position: relative;
-            min-height: 100%;
-          }
-
-          section h1 {
-            font-size: 57px;
-            left: 35px;
-            top: 35px;
-            font-weight: 300;
-            margin: 0;
-            position: absolute;
-            padding-right: 35px;
-            line-height: 1.2em;
-          }
-
-          section h1:focus {
-            outline: none;
-          }
-
-          section h2 {
-            display: none;
-          }
-
-          nav {
-            position: absolute;
-            left: 25px;
-            bottom: 27px;
-          }
-
           nav a {
             text-decoration: none;
             color: #000;
@@ -151,7 +119,6 @@ const Index = () => {
 
             section h2 {
               margin: 8px 40px 0 0;
-              display: inline-block;
               font-weight: 300;
             }
 
@@ -182,23 +149,6 @@ const Index = () => {
             nav {
               display: none;
             }
-          }
-        `}
-      </style>
-
-      <style jsx global>
-        {`
-          body {
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-              Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-            margin: 0;
-            -webkit-font-smoothing: antialiased;
-          }
-
-          html,
-          body,
-          #__next {
-            height: 100%;
           }
         `}
       </style>
