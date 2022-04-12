@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Link from '../components/link';
+import Link from '@components/link';
 
 const twitterURL = 'https://twitter.com/notquiteleo';
 
@@ -43,11 +43,8 @@ const Index = () => {
 
       <nav className="absolute left-7 bottom-7">
         <Link href="https://vercel.com">Mission</Link>
-
         <Link href={twitterURL}>Thoughts</Link>
-
         <Link href="https://github.com/leo">Code</Link>
-
         <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
 
         <Link href={twitterURL} onMouseEnter={onContactHover} onMouseLeave={onContactBlur}>
