@@ -12,13 +12,13 @@
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "next": "12.1.4",
+    "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
-    "@types/react": "18.0.1",
+    "@types/react": "18.0.3",
     "autoprefixer": "10.4.4",
     "husky": "7.0.4",
     "lint-staged": "12.3.7",
