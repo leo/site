@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from '@components/link';
+import QuotationMark from '@components/quotation-mark';
 
 const Index = () => {
   return (
@@ -19,8 +20,11 @@ const Index = () => {
         <h2 className="text-2xl hidden md:inline-block md:font-light md:mt-2 md:mr-10 md:ml-0 md:mb-0">
           Just call me
         </h2>
+
         <h1 className="text-6xl font-light m-0 absolute top-9 left-9 pr-9 md:relative md:inline-block md:left-auto md:top-auto md:pr-0 md:font-light md:text-7xl">
+          <QuotationMark position="left" />
           Leo
+          <QuotationMark position="right" />
         </h1>
       </section>
 
@@ -34,29 +38,6 @@ const Index = () => {
 
       <style jsx>
         {`
-          @media (min-width: 768px) {
-            section h1::before,
-            section h1::after {
-              font-size: 32px;
-              line-height: 0;
-              height: 20px;
-              position: absolute;
-              font-weight: 300;
-            }
-
-            section h1::before {
-              content: '„';
-              top: 10px;
-              right: -15px;
-            }
-
-            section h1::after {
-              content: '„';
-              left: -15px;
-              bottom: 0;
-            }
-          }
-
           @media (max-height: 390px) and (min-width: 768px) {
             nav {
               display: none;

@@ -33,7 +33,7 @@ const Link = ({ children, href, toggleEmail }) => (
 
 Link.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
   toggleEmail: PropTypes.bool,
 };
 
