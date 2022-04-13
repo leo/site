@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const twitterURL = 'https://twitter.com/notquiteleo';
+const twitterURL = 'https://twitter.com/notquiteleo';
 
 const emailPrefix = 'bWFpbHRvOmxlby5sYW1wcmVjaHQ=';
 const emailSuffix = 'aWNsb3VkLmNvbQ==';
@@ -21,7 +21,7 @@ const onMouseLeave = (event) => {
 
 const Link = ({ children, href, toggleEmail }) => (
   <a
-    href={href}
+    href={href || twitterURL}
     target="_blank"
     onMouseEnter={toggleEmail && onMouseEnter}
     onMouseLeave={toggleEmail && onMouseLeave}

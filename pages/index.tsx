@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from '@components/link';
-import { twitterURL } from '@components/link';
 
 const Index = () => {
   return (
@@ -27,12 +26,10 @@ const Index = () => {
 
       <nav className="absolute left-7 bottom-7 flex flex-col md:left-8 md:right-8 md:bottom-8 md:flex-row md:justify-center">
         <Link href="https://vercel.com">Mission</Link>
-        <Link href={twitterURL}>Thoughts</Link>
+        <Link>Thoughts</Link>
         <Link href="https://github.com/leo">Code</Link>
         <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
-        <Link href={twitterURL} toggleEmail>
-          Contact
-        </Link>
+        <Link toggleEmail>Contact</Link>
       </nav>
 
       <style jsx>
