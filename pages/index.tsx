@@ -28,23 +28,13 @@ const Index = () => {
         </h1>
       </section>
 
-      <nav className="absolute left-7 bottom-7 flex flex-col md:left-8 md:right-8 md:bottom-8 md:flex-row md:justify-center">
+      <nav className="absolute left-7 bottom-7 flex flex-col md:left-8 md:right-8 md:bottom-8 md:flex-row md:justify-center thin:hidden">
         <Link href="https://vercel.com">Mission</Link>
         <Link>Thoughts</Link>
         <Link href="https://github.com/leo">Code</Link>
         <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
         <Link toggleEmail>Contact</Link>
       </nav>
-
-      <style jsx>
-        {`
-          @media (max-height: 390px) and (min-width: 768px) {
-            nav {
-              display: none;
-            }
-          }
-        `}
-      </style>
     </main>
   );
 };
