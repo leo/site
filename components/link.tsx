@@ -1,3 +1,5 @@
+'use client';
+
 import PropTypes from 'prop-types';
 
 const twitterURL = 'https://twitter.com/notquiteleo';
