@@ -1,21 +1,9 @@
-import Head from 'next/head';
 import Link from '@components/link';
 import QuotationMark from '@components/quotation-mark';
 
 const Index = () => {
   return (
     <main className="p-8 box-border relative min-h-full md:p-11">
-      <Head>
-        <title>Leo Lamprecht</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <meta name="description" content="Building something new. Previously Head of Product at Vercel." />
-        <meta name="twitter:site" content="@notquiteleo" />
-        <meta name="twitter:creator" content="@notquiteleo" />
-
-        <link rel="icon" href="/initials.svg" />
-      </Head>
-
       <section className="md:absolute md:inset-0 md:text-center md:flex md:h-full md:items-center md:justify-center md:select-none md:cursor-default">
         <h2 className="text-2xl hidden md:inline-block md:font-light md:mt-2 md:mr-10 md:ml-0 md:mb-0">
           Just call me
