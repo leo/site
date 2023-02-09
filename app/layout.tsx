@@ -1,4 +1,5 @@
 import '@styles/globals.css';
+import type { ReactNode } from 'react';
 
 export const metadata = {
   title: 'Leo Lamprecht',
@@ -11,7 +12,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>{children}</body>

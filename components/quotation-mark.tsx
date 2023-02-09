@@ -1,6 +1,10 @@
 import cns from 'clsx';
 
-const QuotationMark = ({ position }) => {
+interface QuotationMarkProps {
+  position: 'left' | 'right';
+}
+
+const QuotationMark = ({ position }: QuotationMarkProps) => {
   return (
     <span
       className={cns('hidden md:block h-5 absolute font-light text-4xl', {

@@ -1,6 +1,6 @@
 'use client';
 
-import PropTypes from 'prop-types';
+import type { ReactNode } from 'react';
 
 const twitterURL = 'https://twitter.com/notquiteleo';
 
@@ -21,7 +21,13 @@ const onMouseLeave = (event) => {
   target.href = twitterURL;
 };
 
-const Link = ({ children, href, toggleEmail }) => (
+interface LinkProps {
+  children: ReactNode;
+  href?: string;
+  toggleEmail?: boolean;
+}
+
+const Link = ({ children, href, toggleEmail }: LinkProps) => (
   <a
     href={href || twitterURL}
     target="_blank"
@@ -32,11 +38,5 @@ const Link = ({ children, href, toggleEmail }) => (
     {children}
   </a>
 );
-
-Link.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
-  href: PropTypes.string,
-  toggleEmail: PropTypes.bool,
-};
 
 export default Link;
