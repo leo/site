@@ -12,6 +12,8 @@ export const metadata = {
   },
 };
 
+export const dynamic = 'force-dynamic';
+
 interface RootLayoutProps {
   children: ReactNode;
 }
