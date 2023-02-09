@@ -1,6 +1,6 @@
 {
   "name": "leo",
-  "version": "105.0.0",
+  "version": "200.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "next",
