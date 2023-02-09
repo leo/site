@@ -12,6 +12,7 @@ interface MenuItem {
 
 const Index = async () => {
   const [menuItems] = await ronin<MenuItem[]>(({ get }) => {
+    // @ts-ignore
     get.menuItems.orderedBy.ascending = ['ronin.updatedAt'];
   });
 
