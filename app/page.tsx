@@ -1,7 +1,20 @@
+import ronin from '@ronin-dist/ronin';
+
 import Link from '@components/link';
 import QuotationMark from '@components/quotation-mark';
 
-const Index = () => {
+interface MenuItem {
+  id: string;
+  name: string;
+  url?: string;
+  showEmail?: boolean;
+}
+
+const Index = async () => {
+  const [menuItems] = await ronin<MenuItem[]>(({ get }) => {
+    get.menuItems.orderedBy.ascending = ['ronin.updatedAt'];
+  });
+
   return (
     <main className="p-8 box-border relative min-h-full md:p-11">
       <section className="md:absolute md:inset-0 md:text-center md:flex md:h-full md:items-center md:justify-center md:select-none md:cursor-default">
@@ -17,11 +30,11 @@ const Index = () => {
       </section>
 
       <nav className="absolute left-7 bottom-7 flex flex-col md:left-8 md:right-8 md:bottom-8 md:flex-row md:justify-center thin:hidden">
-        <Link href="https://vercel.com">Mission</Link>
-        <Link>Thoughts</Link>
-        <Link href="https://github.com/leo">Code</Link>
-        <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
-        <Link toggleEmail>Contact</Link>
+        {menuItems.map((menuItem) => (
+          <Link key={menuItem.id} href={menuItem.url} toggleEmail={menuItem.showEmail}>
+            {menuItem.name}
+          </Link>
+        ))}
       </nav>
     </main>
   );
