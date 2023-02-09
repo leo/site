@@ -12,6 +12,7 @@
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write --ignore-path .gitignore"
   },
   "dependencies": {
+    "@ronin-dist/ronin": "1.0.43",
     "clsx": "1.2.1",
     "next": "13.1.6",
     "react": "18.2.0",
