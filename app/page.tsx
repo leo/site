@@ -1,4 +1,4 @@
-import ronin from '@ronin-dist/ronin';
+import ronin from 'ronin';
 
 import Link from '@components/link';
 import QuotationMark from '@components/quotation-mark';
