@@ -19,7 +19,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@ronin/leo": "https://ronin.supply/@ronin/leo/-/leo-0.1.1.tar.gz",
+    "@ronin/leo": "https://ronin.supply/@ronin/leo/-/leo-latest.tar.gz",
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
     "autoprefixer": "10.4.13",
