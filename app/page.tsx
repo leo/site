@@ -1,14 +1,8 @@
 import ronin from 'ronin';
+import type { MenuItem } from '@ronin/leo';
 
 import Link from '@components/link';
 import QuotationMark from '@components/quotation-mark';
-
-interface MenuItem {
-  id: string;
-  name: string;
-  url?: string;
-  showEmail?: boolean;
-}
 
 const Index = async () => {
   const [menuItems] = await ronin<MenuItem[]>(({ get }) => {
