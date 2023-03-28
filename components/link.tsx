@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 
 const twitterURL = 'https://twitter.com/notquiteleo';
 
-const emailPrefix = 'bGVv';
+const emailPrefix = 'bWFpbHRvOmxlbw==';
 const emailSuffix = 'cm9uaW4uY28=';
 
 const convert = atob;
