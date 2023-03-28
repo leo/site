@@ -4,13 +4,15 @@ import type { ReactNode } from 'react';
 
 const twitterURL = 'https://twitter.com/notquiteleo';
 
-const emailPrefix = 'bWFpbHRvOmxlby5sYW1wcmVjaHQ=';
-const emailSuffix = 'aWNsb3VkLmNvbQ==';
+const emailPrefix = 'bGVv';
+const emailSuffix = 'cm9uaW4uY28=';
+
+const convert = atob;
 
 const onMouseEnter = (event) => {
   const { target } = event;
-  const prefix = atob(emailPrefix);
-  const suffix = atob(emailSuffix);
+  const prefix = convert(emailPrefix);
+  const suffix = convert(emailSuffix);
   const email = `${prefix}@${suffix}`;
 
   target.href = email;
