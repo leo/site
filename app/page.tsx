@@ -1,13 +1,10 @@
 import ronin from 'ronin';
 import type { MenuItem } from '@ronin/leo';
-import { redirect } from 'next/navigation';
 
 import Link from '@components/link';
 import QuotationMark from '@components/quotation-mark';
 
 const Index = async () => {
-  redirect('https://ronin.co');
-
   const [menuItems] = await ronin<MenuItem[]>(({ get }) => {
     // @ts-ignore
     get.menuItems.orderedBy.ascending = ['ronin.updatedAt'];
