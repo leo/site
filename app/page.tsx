@@ -6,7 +6,6 @@ import QuotationMark from '@components/quotation-mark';
 
 const Index = async () => {
   const [menuItems] = await ronin<MenuItem[]>(({ get }) => {
-    // @ts-ignore
     get.menuItems.orderedBy.ascending = ['ronin.updatedAt'];
   });
 
