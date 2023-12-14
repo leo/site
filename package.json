@@ -12,14 +12,14 @@
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "ronin": "1.0.42",
     "clsx": "2.0.0",
     "next": "13.4.12",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "ronin": "1.0.42"
   },
   "devDependencies": {
-    "@ronin/leo": "latest",
+    "@ronin/leo": "0.0.3404281621153",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "autoprefixer": "10.4.14",
