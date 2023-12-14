@@ -19,7 +19,7 @@
     "ronin": "1.0.42"
   },
   "devDependencies": {
-    "@ronin/leo": "0.0.3404281621153",
+    "@ronin/leo": "0.0.3405057856780",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "autoprefixer": "10.4.14",
