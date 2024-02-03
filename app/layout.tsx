@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 
 export const metadata = {
   title: 'Leo Lamprecht',
-  description: 'Building something new. Previously Head of Product at Vercel.',
+  description: 'RONIN CEO. Previously 1st Head of Product at Vercel.',
   twitter: {
     creator: '@notquiteleo',
   },
