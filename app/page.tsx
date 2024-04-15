@@ -1,13 +1,10 @@
-import ronin from 'ronin';
-import type { MenuItem } from '@ronin/leo';
-
+import { get } from 'ronin';
 import Link from '@components/link';
 import QuotationMark from '@components/quotation-mark';
 
 const Index = async () => {
-  const [menuItems] = await ronin<MenuItem[]>(({ get }) => {
-    get.menuItems.orderedBy.ascending = ['ronin.updatedAt'];
-  });
+  const menuItems = await get.menuItems.orderedBy.ascending(['ronin.updatedAt']);
+  console.log(menuItems);
 
   return (
     <main className="p-8 box-border relative min-h-full md:p-11">
