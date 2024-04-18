@@ -16,7 +16,7 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "ronin": "1.0.42"
+    "ronin": "2.0.29-beta.0"
   },
   "devDependencies": {
     "@ronin/leo": "0.0.3405057882417",
