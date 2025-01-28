@@ -2,8 +2,10 @@ import { get } from 'ronin';
 import Link from '@components/link';
 import QuotationMark from '@components/quotation-mark';
 
+import type { MenuItem } from '@schema';
+
 const Index = async () => {
-  const menuItems = await get.menuItems.orderedBy.ascending(['ronin.updatedAt']);
+  const menuItems = (await get.menuItems.orderedBy.ascending(['ronin.updatedAt'])) as Array<MenuItem>;
 
   return (
     <main className="p-8 box-border relative min-h-full md:p-11">

@@ -15,10 +15,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
-    "types": ["@ronin/leo"],
     "paths": {
       "@components/*": ["components/*"],
       "@pages/*": ["app/*"],
+      "@schema": ["schema/index"],
       "@styles/*": ["styles/*"]
     },
     "plugins": [
