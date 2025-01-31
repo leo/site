@@ -18,8 +18,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@pages/*": ["app/*"],
-      "@schema": ["schema/index"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@schema": ["schema/index"]
     },
     "plugins": [
       {
