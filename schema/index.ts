@@ -1,4 +1,4 @@
-import { boolean, model, string } from 'ronin/schema';
+import { blob, boolean, model, string } from 'ronin/schema';
 
 export const MenuItem = model({
   slug: 'menuItem',
@@ -11,3 +11,14 @@ export const MenuItem = model({
 });
 
 export type MenuItem = typeof MenuItem;
+
+export const Account = model({
+  slug: 'account',
+
+  fields: {
+    handle: string(),
+    avatar: blob(),
+  },
+});
+
+export type Account = typeof Account;
