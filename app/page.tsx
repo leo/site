@@ -5,7 +5,7 @@ import QuotationMark from '@components/quotation-mark';
 import type { MenuItem } from '@schema';
 
 const Index = async () => {
-  const menuItems = (await get.menuItems.orderedBy.ascending(['ronin.updatedAt'])) as Array<MenuItem>;
+  const menuItems = await get.menuItems.orderedBy.ascending<Array<MenuItem>>(['ronin.updatedAt']);
 
   return (
     <main className="p-8 box-border relative min-h-full md:p-11">
