@@ -7,4 +7,3 @@ node_modules
 # Local config
 .env*
 .vercel
-.ronin
