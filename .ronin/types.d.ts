@@ -6,7 +6,10 @@ interface MenuItemSchema extends ResultRecord {
   url: string;
 }
 export type MenuItem = MenuItemSchema;
-export type MenuItems = Array<MenuItemSchema>;
+export type MenuItems = Array<MenuItemSchema> & {
+  moreBefore?: string;
+  moreAfter?: string;
+};
 declare module 'ronin' {
   declare const add: {
     /* Add a single menuItem record */
