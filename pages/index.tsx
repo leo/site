@@ -1,9 +1,12 @@
-import { get } from 'ronin';
-import Link from '@components/link';
+import { use } from '@ronin/blade/server/hooks';
+
+import Link from '@components/link.client';
 import QuotationMark from '@components/quotation-mark';
 
-const Index = async () => {
-  const menuItems = await get.menuItems.orderedBy.ascending(['ronin.updatedAt']);
+import type { MenuItems } from 'ronin';
+
+const Index = () => {
+  const menuItems = use.menuItems.orderedBy.ascending(['ronin.updatedAt']) as unknown as MenuItems;
 
   return (
     <main className="p-8 box-border relative min-h-full md:p-11">
@@ -29,7 +32,5 @@ const Index = async () => {
     </main>
   );
 };
-
-export const revalidate = 30;
 
 export default Index;

@@ -1,5 +1,7 @@
-module.exports = {
-  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
+import type { Config } from 'tailwindcss';
+
+export default {
+  content: ['./**/*.{ts,tsx}'],
   theme: {
     extend: {
       screens: {
@@ -7,4 +9,4 @@ module.exports = {
       },
     },
   },
-};
+} satisfies Config;
