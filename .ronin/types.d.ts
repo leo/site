@@ -1,42 +1,80 @@
-import type { AddQuery, CountQuery, GetQuery, RemoveQuery, SetQuery } from '@ronin/compiler';
+import type {
+  AddQuery,
+  CountQuery,
+  GetQuery,
+  ListQuery,
+  Model,
+  RemoveQuery,
+  SetQuery,
+} from '@ronin/compiler';
 import type { DeepCallable, ResultRecord } from '@ronin/syntax/queries';
-interface MenuItemSchema extends ResultRecord {
-  name: string;
-  showEmail: boolean;
-  url: string;
-}
-export type MenuItem = MenuItemSchema;
-export type MenuItems = Array<MenuItemSchema> & {
-  moreBefore?: string;
-  moreAfter?: string;
-};
+import type { QueryHandlerOptions } from 'ronin/types';
 declare module 'ronin' {
-  declare const add: {
-    /* Add a single menuItem record */
-    menuItem: DeepCallable<AddQuery[keyof AddQuery], MenuItem | null>;
+  export type MenuItem = ResultRecord & {
+    name: string;
+    showEmail: boolean;
+    url: string;
   };
-  declare const count: {
-    /* Count a single menuItem record */
-    menuItem: DeepCallable<CountQuery[keyof CountQuery], MenuItem | null>;
-    /* Count multiple menuItem records */
-    menuItems: DeepCallable<CountQuery[keyof CountQuery], MenuItems>;
+  export type MenuItems = Array<MenuItem> & {
+    moreBefore?: string;
+    moreAfter?: string;
   };
   declare const get: {
-    /* Get a single menuItem record */
+    /* Get a single Menu Item record */
     menuItem: DeepCallable<GetQuery[keyof GetQuery], MenuItem | null>;
-    /* Get multiple menuItem records */
+    /* Get multiple Menu Item records */
     menuItems: DeepCallable<GetQuery[keyof GetQuery], MenuItems>;
   };
-  declare const remove: {
-    /* Remove a single menuItem record */
-    menuItem: DeepCallable<RemoveQuery[keyof RemoveQuery], MenuItem | null>;
-    /* Remove multiple menuItem records */
-    menuItems: DeepCallable<RemoveQuery[keyof RemoveQuery], MenuItems>;
+  declare const count: {
+    /* Count multiple Menu Item records */
+    menuItems: DeepCallable<CountQuery[keyof CountQuery], number>;
   };
   declare const set: {
-    /* Set a single menuItem record */
+    /* Set a single Menu Item record */
     menuItem: DeepCallable<SetQuery[keyof SetQuery], MenuItem | null>;
-    /* Set multiple menuItem records */
+    /* Set multiple Menu Item records */
     menuItems: DeepCallable<SetQuery[keyof SetQuery], MenuItems>;
+  };
+  declare const add: {
+    /* Add a single Menu Item record */
+    menuItem: DeepCallable<AddQuery[keyof AddQuery], MenuItem | null>;
+  };
+  declare const remove: {
+    /* Remove a single Menu Item record */
+    menuItem: DeepCallable<RemoveQuery[keyof RemoveQuery], MenuItem | null>;
+    /* Remove multiple Menu Item records */
+    menuItems: DeepCallable<RemoveQuery[keyof RemoveQuery], MenuItems>;
+  };
+  declare const list: {
+    /* List all model definitions */
+    models: DeepCallable<ListQuery[keyof ListQuery], Array<Model>>;
+  };
+  declare const createSyntaxFactory: (options: QueryHandlerOptions | (() => QueryHandlerOptions)) => {
+    get: typeof get;
+    count: typeof count;
+    set: typeof set;
+    add: typeof add;
+    remove: typeof remove;
+    list: typeof list;
+    create: typeof create;
+    alter: typeof alter;
+    drop: typeof drop;
+    batch: typeof batch;
+    sql: typeof sql;
+    sqlBatch: typeof sqlBatch;
+  };
+  export default function (options: QueryHandlerOptions | (() => QueryHandlerOptions)): {
+    get: typeof get;
+    count: typeof count;
+    set: typeof set;
+    add: typeof add;
+    remove: typeof remove;
+    list: typeof list;
+    create: typeof create;
+    alter: typeof alter;
+    drop: typeof drop;
+    batch: typeof batch;
+    sql: typeof sql;
+    sqlBatch: typeof sqlBatch;
   };
 }
