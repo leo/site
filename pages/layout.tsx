@@ -1,7 +1,5 @@
 import { useMetadata } from '@ronin/blade/server/hooks';
 
-import '@styles/globals.css';
-
 import type { ReactNode } from 'react';
 
 interface RootLayoutProps {
