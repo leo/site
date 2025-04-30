@@ -14,7 +14,7 @@
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "@ronin/blade": "0.2.4-ben-ron-1174-experimental-220",
+    "@ronin/blade": "0.2.4-ben-ron-1174-experimental-222",
     "clsx": "2.1.1",
     "react": "0.0.0-experimental-df12d7eac-20230510",
     "react-dom": "0.0.0-experimental-df12d7eac-20230510",
