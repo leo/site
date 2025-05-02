@@ -10,8 +10,6 @@ export const MenuItem = model({
   },
 });
 
-export type MenuItem = typeof MenuItem;
-
 export const Account = model({
   slug: 'account',
 
@@ -20,5 +18,3 @@ export const Account = model({
     avatar: blob(),
   },
 });
-
-export type Account = typeof Account;
