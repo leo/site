@@ -16,10 +16,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@pages/*": ["app/*"],
-      "@styles/*": ["styles/*"],
-      "@schema": ["schema/index"]
+      "@components/*": ["components/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", ".ronin/*.d.ts"],
