@@ -26,7 +26,6 @@
     "husky": "9.0.11",
     "lint-staged": "15.5.1",
     "prettier": "3.5.3",
-    "ronin": "6.4.20",
     "typescript": "5.8.3"
   }
 }

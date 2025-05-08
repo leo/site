@@ -1,4 +1,4 @@
-import { blob, boolean, model, string } from 'ronin/schema';
+import { blob, boolean, model, string } from '@ronin/blade/universal/schema';
 
 export const MenuItem = model({
   slug: 'menuItem',
