@@ -4,7 +4,7 @@
     "": {
       "name": "leo",
       "dependencies": {
-        "@ronin/blade": "0.3.3",
+        "@ronin/blade": "0.3.4",
         "clsx": "2.1.1",
         "react": "0.0.0-experimental-df12d7eac-20230510",
         "react-dom": "0.0.0-experimental-df12d7eac-20230510",
@@ -43,7 +43,7 @@
 
     "@pkgjs/parseargs": ["@pkgjs/parseargs@0.11.0", "", {}, "sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg=="],
 
-    "@ronin/blade": ["@ronin/blade@0.3.3", "", { "bin": { "blade": "dist/private/shell/index.js" } }, "sha512-11NcQT3Jz+UWLmoKRWxYb2eR86MfUSt7ZXNMv2kLPgsmTGE3lEY9pBV926xdGNJIIlQxDCraEMAq3ffqcgGbsQ=="],
+    "@ronin/blade": ["@ronin/blade@0.3.4", "", { "bin": { "blade": "dist/private/shell/index.js" } }, "sha512-1oskRofuuErzqf4x3Gv33L5DspFKrpvCKg70RPF8W88h+KPdlifOvPZu9T8q6ZnKUphtTRTOJA8kUAKRpKxw3w=="],
 
     "@types/react": ["@types/react@19.1.2", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-oxLPMytKchWGbnQM9O7D67uPa9paTNxO7jVoNMXgkkErULBPhPARCfkKL9ytcIJJRGjbsVwW4ugJzyFFvm/Tiw=="],
 
