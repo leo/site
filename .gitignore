@@ -1,10 +1,14 @@
 # Build output
-.next
+.blade
 
 # Dependencies
 node_modules
 
 # Local config
 .env*
+
+# Vercel
 .vercel
+
+# RONIN
 .ronin/config.json

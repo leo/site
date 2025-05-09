@@ -16,17 +16,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@pages/*": ["app/*"],
-      "@styles/*": ["styles/*"],
-      "@schema": ["schema/index"]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+      "@components/*": ["components/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".ronin/*.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx", ".ronin/*.d.ts"],
   "exclude": ["node_modules"]
 }
