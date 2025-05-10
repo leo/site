@@ -1,10 +1,8 @@
-import { use } from '@ronin/blade/server/hooks';
-import { useMetadata } from '@ronin/blade/server/hooks';
+import { use, useMetadata } from '@ronin/blade/server/hooks';
+import type { MenuItems } from 'ronin';
 
 import Link from '@components/link.client';
 import QuotationMark from '@components/quotation-mark';
-
-import type { MenuItems } from 'ronin';
 
 const Index = () => {
   useMetadata({
