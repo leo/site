@@ -1,5 +1,0 @@
-@import 'tailwindcss';
-
-@theme {
-  --screen-thin: (max-height: 390px) and (min-width: 768px);
-}
