@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@media (max-height: 390px) and (min-width: 768px) {
+  .thin\:block {
+    display: block;
+  }
+
+  .thin\:hidden {
+    display: none;
+  }
+}
