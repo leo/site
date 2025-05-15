@@ -4,7 +4,7 @@
     "": {
       "name": "leo",
       "dependencies": {
-        "@ronin/blade": "0.5.1",
+        "@ronin/blade": "0.5.2",
         "clsx": "2.1.1",
         "react": "0.0.0-experimental-df12d7eac-20230510",
         "react-dom": "0.0.0-experimental-df12d7eac-20230510",
@@ -34,7 +34,7 @@
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.25", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ=="],
 
-    "@ronin/blade": ["@ronin/blade@0.5.1", "", { "dependencies": { "@tailwindcss/node": "4.1.6", "@tailwindcss/oxide": "4.1.6" }, "bin": { "blade": "dist/private/shell/index.js" } }, "sha512-vTAiH2jSvQcZYUzRuY/+EVMhveUxglXMhwto1QTnvAx5neHso3rJzZm3z4sSZaBKOy/5nmmn8VJR9nwnIsFeLg=="],
+    "@ronin/blade": ["@ronin/blade@0.5.2", "", { "dependencies": { "@tailwindcss/node": "4.1.6", "@tailwindcss/oxide": "4.1.6" }, "bin": { "blade": "dist/private/shell/index.js" } }, "sha512-hiRmtgnpiQ3lzpamkRHHInI73Bo35FVJu374zZsDej15pqpKzDKAmGn63roG7Bap58+pExKKfcL/4fyep6aMKw=="],
 
     "@tailwindcss/node": ["@tailwindcss/node@4.1.6", "", { "dependencies": { "@ampproject/remapping": "^2.3.0", "enhanced-resolve": "^5.18.1", "jiti": "^2.4.2", "lightningcss": "1.29.2", "magic-string": "^0.30.17", "source-map-js": "^1.2.1", "tailwindcss": "4.1.6" } }, "sha512-ed6zQbgmKsjsVvodAS1q1Ld2BolEuxJOSyyNc+vhkjdmfNUDCmQnlXBfQkHrlzNmslxHsQU/bFmzcEbv4xXsLg=="],
 
