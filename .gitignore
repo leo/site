@@ -12,3 +12,4 @@ node_modules
 
 # RONIN
 .ronin/config.json
+.env*.local
