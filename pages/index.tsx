@@ -34,9 +34,7 @@ const Index = () => {
         <Link href="https://x.com/leo">Thoughts</Link>
         <Link href="https://github.com/leo">Code</Link>
         <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
-        <Link href="#" toggleEmail>
-          Contact
-        </Link>
+        <Link toggleEmail>Contact</Link>
       </nav>
     </main>
   );
