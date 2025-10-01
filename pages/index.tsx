@@ -1,5 +1,4 @@
-import { use, useMetadata } from 'blade/server/hooks';
-import type { MenuItems } from 'ronin';
+import { useMetadata } from 'blade/server/hooks';
 
 import Link from '@components/link.client';
 import QuotationMark from '@components/quotation-mark';
@@ -16,8 +15,6 @@ const Index = () => {
     bodyClassName: 'antialiased m-0 h-full',
   });
 
-  const menuItems = use.menuItems.orderedBy.ascending(['ronin.updatedAt']) as unknown as MenuItems;
-
   return (
     <main className="p-8 box-border relative min-h-full md:p-11">
       <section className="md:absolute md:inset-0 md:text-center md:flex md:h-full md:items-center md:justify-center md:select-none md:cursor-default">
@@ -33,11 +30,13 @@ const Index = () => {
       </section>
 
       <nav className="absolute left-7 bottom-7 flex flex-col md:left-8 md:right-8 md:bottom-8 md:flex-row md:justify-center thin:hidden">
-        {menuItems.map((menuItem) => (
-          <Link key={menuItem.id} href={menuItem.url} toggleEmail={menuItem.showEmail}>
-            {menuItem.name}
-          </Link>
-        ))}
+        <Link href="https://blade.im">Mission</Link>
+        <Link href="https://x.com/leo">Thoughts</Link>
+        <Link href="https://github.com/leo">Code</Link>
+        <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
+        <Link href="#" toggleEmail>
+          Contact
+        </Link>
       </nav>
     </main>
   );

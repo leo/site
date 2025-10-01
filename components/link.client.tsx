@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-const twitterURL = 'https://twitter.com/notquiteleo';
+const twitterURL = 'https://x.com/leo';
 
 const emailPrefix = 'bWFpbHRvOmxlbw==';
 const emailSuffix = 'cm9uaW4uY28=';
