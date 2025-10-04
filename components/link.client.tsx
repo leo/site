@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { MouseEventHandler, ReactNode } from 'react';
 
 const twitterURL = 'https://x.com/leo';
 
@@ -7,18 +7,18 @@ const emailSuffix = 'cm9uaW4uY28=';
 
 const convert = atob;
 
-const onMouseEnter = (event) => {
+const onMouseEnter: MouseEventHandler<HTMLAnchorElement> = (event) => {
   const { target } = event;
   const prefix = convert(emailPrefix);
   const suffix = convert(emailSuffix);
   const email = `${prefix}@${suffix}`;
 
-  target.href = email;
+  (target as HTMLAnchorElement).href = email;
 };
 
-const onMouseLeave = (event) => {
+const onMouseLeave: MouseEventHandler<HTMLAnchorElement> = (event) => {
   const { target } = event;
-  target.href = twitterURL;
+  (target as HTMLAnchorElement).href = twitterURL;
 };
 
 interface LinkProps {

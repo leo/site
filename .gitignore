@@ -1,5 +1,5 @@
 # Build output
-.blade
+.blade/dist
 
 # Dependencies
 node_modules
@@ -9,7 +9,3 @@ node_modules
 
 # Vercel
 .vercel
-
-# RONIN
-.ronin/config.json
-.env*.local

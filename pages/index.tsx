@@ -1,7 +1,7 @@
 import { useMetadata } from 'blade/server/hooks';
 
-import Link from '@components/link.client';
-import QuotationMark from '@components/quotation-mark';
+import Link from '@/components/link.client';
+import QuotationMark from '@/components/quotation-mark';
 
 const Index = () => {
   useMetadata({
