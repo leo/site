@@ -31,7 +31,8 @@ const Index = () => {
 
       <nav className="absolute left-7 bottom-7 flex flex-col md:left-8 md:right-8 md:bottom-8 md:flex-row md:justify-center thin:hidden">
         <Link href="https://blade.im">Mission</Link>
-        <Link href="https://x.com/leo">Thoughts</Link>
+        <Link href="https://x.com/leo">Long Form</Link>
+        <Link href="https://threads.com/leonardlamprecht_">Short Form</Link>
         <Link href="https://github.com/leo">Code</Link>
         <Link href="https://dribbble.com/notquiteleo">Visuals</Link>
         <Link toggleEmail>Contact</Link>
